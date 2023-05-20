@@ -1,4 +1,13 @@
+<!-- Class Binding -->
 <h1 [class.text-red] = "bool">Angular APP</h1>
+
+<!-- Style Binding -->
+<h1 [style.color] = "bool ? 'blue' : 'black'">Style Binding</h1>
+
+<!-- Event Binding -->
+<button (click)="buttonClick()">Click me</button>
+
+<!-- COMPONENTS -->
 <app-navbar></app-navbar>
 <app-post></app-post>
 
@@ -8,5 +17,4 @@
 <img src="{{ imgUrl }}" alt="">
 
 <!-- Property Binding -->
-
 <img [src]="imgUrl" alt="">

@@ -1,5 +1,12 @@
 <h1>Angular APP</h1>
-<p> {{ message }} </p>
-
 <app-navbar></app-navbar>
 <app-post></app-post>
+
+<!-- String interpolation  -->
+<p> {{ message }} </p>
+
+<img src="{{ imgUrl }}" alt="">
+
+<!-- Property Binding -->
+
+<img [src]="imgUrl" alt="">

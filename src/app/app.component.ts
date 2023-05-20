@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngIntro';
+  message: string = 'Message From Typescript Component File';
 }

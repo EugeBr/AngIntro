@@ -18,3 +18,8 @@
 
 <!-- Property Binding -->
 <img [src]="imgUrl" alt="">
+
+<!-- Two way Data binding -->
+<!--<input type="text" (keyup.enter) = "onKeyup(username.value)" #username>-->
+
+<input type="text" [(ngModel)] = "userName" (keyup.enter) = "onKeyup()">

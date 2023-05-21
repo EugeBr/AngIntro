@@ -43,9 +43,15 @@
 
 <button (click)="addNew()">Add New Data</button>
 
-<ul>
-    <li *ngFor = "let post of objArray; let i = index" >
-        {{ post.postTitle }}
-        <button (click)="onDelete(i)">Delete</button>
-    </li>
-</ul>
+<div *ngIf = "objArray.length > 0" >
+    <ul>
+        <li *ngFor = "let post of objArray; let i = index" >
+            {{ post.postTitle }}
+            <button (click)="onDelete(i)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf = "objArray.length == 0" >
+    <p>There is no Data to fetch ...</p>
+</div>

@@ -34,7 +34,12 @@
     <li>{{ postArray[4] }}</li>
 </ul>
 
-<!-- V2 with ngFor directive -->
+<!-- V2 Fetched using ngFor Directive -->
 <ul>
     <li *ngFor = "let post of postArray" > {{ post }} </li>
+</ul>
+
+<!-- V3 Fetching Object array -->
+<ul>
+    <li *ngFor = "let post of objArray" > {{ post.postTitle }} </li>
 </ul>

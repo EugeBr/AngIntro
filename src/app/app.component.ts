@@ -18,7 +18,15 @@ export class AppComponent {
   onKeyup() {
     console.log(this.userName);
   }
-  postArray: Array<String> = ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'];
+  postArray: Array<string> = ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'];
+
+  objArray: Array<any> = [
+    { id: 1, postTitle: 'Post 1'},
+    { id: 2, postTitle: 'Post 2'},
+    { id: 3, postTitle: 'Post 3'},
+    { id: 4, postTitle: 'Post 4'},
+    { id: 5, postTitle: 'Post 5'},
+  ]
 
   constructor(){
     for (let i = 0; i < this.postArray.length; i++) {

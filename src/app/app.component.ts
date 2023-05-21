@@ -28,9 +28,18 @@ export class AppComponent {
     { id: 5, postTitle: 'Post 5'},
   ]
 
-  constructor(){
+  constructor() {
     for (let i = 0; i < this.postArray.length; i++) {
       console.log(this.postArray[i]);
     }
+  }
+
+  addNew() {
+    this.objArray.push({ id: 6, postTitle: 'Post 6' });
+  }
+
+  onDelete(i: any) {
+   // let index = this.objArray.indexOf(post);
+    this.objArray.splice(i, 1);
   }
 }
